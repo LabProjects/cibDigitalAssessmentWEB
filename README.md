@@ -6,6 +6,8 @@
   * Maven 3.6.9 / any latest
   * Git
   * Intellij ( Install pluggin called "Cucumber for Java") 2 How to run the tests
+  * jenkins.war
+  * Github access
 
 2 How to run the tests
 
@@ -20,6 +22,12 @@
     * If there's a failed test during your execution:
     * Go to src > test > java > runners > TestRunnerFails and click on Run icon on loc 16 Note: you can also open the feature file and run from there but you won't be able to get the report. So run there if you are debugging the code only
   * Jenkins
+    * There's two builds i've created on Jenkins for this project:
+      * Locally (cibDigitalAssessmentWEB_locally)
+      * This will run the project locally if you have jenkins configured and running to allow jobs (Jenkins and Intellij integration)
+    * Remote (cibDigitalAssessmentWEB_remote)
+      *  This will run the project locally as well but this is an integration between Github and Jenkins and it does require you to have Jenkins server running
+      * Note : There are couple of jobs already ran and you can open one maven project created and do your own build and see the stats through the published report    
 
 3 An overview of your project structure
 
@@ -44,7 +52,9 @@
 
 4 Any assumptions or decisions made
 
-   * Nothing major
+   * The above project does run perfectly fine from the runner files but if you go the route of mvn test only parallel exec will run and i've been trying to figure this out as i know for sure it's dependencies along with the builds. Time was something that i didn't have at all and this will be fixed soon.
+   * Reports won't be generated using this framework and is because of changes i've made to the pom/dependecies to cater for other things i wanted to achieve for this assessment but i have the below project that can be close and ran from the runner classes to get the report.
+     repo : 
 
 5 List of tools and resources used 
 
