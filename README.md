@@ -54,7 +54,7 @@
 
    * The above project does run perfectly fine from the runner files but if you go the route of mvn test only parallel exec will run and i've been trying to figure this out as i know for sure it's dependencies along with the builds. Time was something that i didn't have at all and this will be fixed soon.
    * Reports won't be generated using this framework and is because of changes i've made to the pom/dependecies to cater for other things i wanted to achieve for this assessment but i have the below project that can be close and ran from the runner classes to get the report.
-     repo : 
+     repo : https://github.com/LabProjects/cibDigitalAssessmentMND.git
 
 5 List of tools and resources used 
 
