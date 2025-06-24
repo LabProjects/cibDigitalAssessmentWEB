@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: Web Details Scenarios #1
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 21.253 s <<< FAILURE! - in Web Details Scenarios #1
+Adding Admin user to the webtables(Web Details Scenarios #1)  Time elapsed: 12.03 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="btn btn-link pull-right" ng-click="pop()" type="add">...</button> is not clickable at point (1469, 79). Other element would receive the click: <div class="modal-backdrop"></div>
+  (Session info: MicrosoftEdge=137.0.3296.93)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [abfd8f78dd03afb28395dc305f7007a9, clickElement {id=f.332427C52D4E349BAA2ACBB0D0A8EFE9.d.FA862322B14B4EB9867ECE4C25C9D589.e.50}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56022}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\suave\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56022/devtoo..., se:cdpVersion: 137.0.3296.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (abfd8f78dd03afb28395dc305f7007a9)] -> xpath: //button[@type='add']]
+Session ID: abfd8f78dd03afb28395dc305f7007a9
+
+Adding Customer user to the webtables(Web Details Scenarios #1)  Time elapsed: 9.196 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="btn btn-link pull-right" ng-click="pop()" type="add">...</button> is not clickable at point (1469, 79). Other element would receive the click: <div class="modal-backdrop"></div>
+  (Session info: MicrosoftEdge=137.0.3296.93)
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b579abe6e9b34bc425b70942f8e1f3a2, clickElement {id=f.8F5364C2D1947B7273E3C47C7CCE1FB1.d.18AD6030072A4C0D266602DAEF676600.e.45}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 137.0.3296.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56119}, msedge: {msedgedriverVersion: 137.0.3296.93 (114b4a913acd..., userDataDir: C:\Users\suave\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56119/devtoo..., se:cdpVersion: 137.0.3296.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b579abe6e9b34bc425b70942f8e1f3a2)] -> xpath: //button[@type='add']]
+Session ID: b579abe6e9b34bc425b70942f8e1f3a2
+

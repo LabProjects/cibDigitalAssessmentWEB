@@ -1,0 +1,5 @@
+Report/
+target/test-classes
+test-output/
+.idea/
+.settings/

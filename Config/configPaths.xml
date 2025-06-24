@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--URLS-->
+
+<!--Browsers to execute-->
+    <!--Edge-->
+    <!--Chrome-->
+    <!--Firefox-->
+
+<webObjects>
+    <URLweb>
+        <identifier>web</identifier>
+        <path>http://www.way2automation.com/angularjs-protractor/webtables/</path>
+    </URLweb>
+    <URLapi>
+        <identifier>api</identifier>
+        <path>http://www.way2automation.com/angularjs-protractor/webtables/</path>
+    </URLapi>
+    <browser>
+        <identifier>browser-driver</identifier>
+        <path>chrome</path>
+    </browser>
+
+</webObjects>

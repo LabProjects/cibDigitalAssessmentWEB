@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.AccountsRunner" time="467.784" tests="21" errors="11" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Automation\target\test-classes;C:\Automation\target\classes;C:\Users\techx\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\techx\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-junit\7.13.0\cucumber-junit-7.13.0.jar;C:\Users\techx\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\techx\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\techx\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-java\7.13.0\cucumber-java-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-core\7.13.0\cucumber-core-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-gherkin\7.13.0\cucumber-gherkin-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.13.0\cucumber-gherkin-messages-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\techx\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\techx\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\techx\.m2\repository\io\cucumber\datatable\7.13.0\datatable-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-plugin\7.13.0\cucumber-plugin-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\docstring\7.13.0\docstring-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\html-formatter\20.3.1\html-formatter-20.3.1.jar;C:\Users\techx\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\techx\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\techx\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\techx\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\techx\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\techx\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\techx\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\techx\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\techx\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\techx\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\techx\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\techx\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\techx\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\techx\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\techx\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\techx\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\techx\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\techx\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\techx\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\techx\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\techx\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\techx\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\techx\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\techx\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\techx\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\techx\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\techx\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.13.0\extentreports-cucumber7-adapter-1.13.0.jar;C:\Users\techx\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\techx\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\techx\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\techx\.m2\repository\tech\grasshopper\extent-pdf-report\2.11.0\extent-pdf-report-2.11.0.jar;C:\Users\techx\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.13.0\cucumber-pdf-report-2.13.0.jar;C:\Users\techx\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\techx\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\techx\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\techx\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\techx\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\techx\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\techx\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\techx\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\techx\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.4.1\rest-assured-cucumber-pdf-report-1.4.1.jar;C:\Users\techx\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\techx\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\techx\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\techx\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\techx\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\techx\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\techx\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\techx\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.1\htmlextentreporter-1.0.1.jar;C:\Users\techx\.m2\repository\tech\grasshopper\extent-excel-report\1.3.0\extent-excel-report-1.3.0.jar;C:\Users\techx\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\techx\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\techx\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\techx\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\techx\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\techx\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\techx\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\techx\.m2\repository\org\jeasy\easy-random-core\4.0.0\easy-random-core-4.0.0.jar;C:\Users\techx\.m2\repository\org\objenesis\objenesis\3.0.1\objenesis-3.0.1.jar;C:\Users\techx\.m2\repository\io\github\classgraph\classgraph\4.8.29\classgraph-4.8.29.jar;C:\Users\techx\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\techx\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\techx\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Johannesburg"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\techx\AppData\Local\Temp\surefire13976449608288613259\surefirebooter16500936005870824918.jar C:\Users\techx\AppData\Local\Temp\surefire13976449608288613259 2024-04-05T23-08-23_020-jvmRun1 surefire16589177122425047504tmp surefire_012396190782325498745tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Automation\target\test-classes;C:\Automation\target\classes;C:\Users\techx\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\techx\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-junit\7.13.0\cucumber-junit-7.13.0.jar;C:\Users\techx\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\techx\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\techx\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-java\7.13.0\cucumber-java-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-core\7.13.0\cucumber-core-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-gherkin\7.13.0\cucumber-gherkin-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.13.0\cucumber-gherkin-messages-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\techx\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\techx\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\techx\.m2\repository\io\cucumber\datatable\7.13.0\datatable-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\cucumber-plugin\7.13.0\cucumber-plugin-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\docstring\7.13.0\docstring-7.13.0.jar;C:\Users\techx\.m2\repository\io\cucumber\html-formatter\20.3.1\html-formatter-20.3.1.jar;C:\Users\techx\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\techx\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-java\4.11.0\selenium-java-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-api\4.11.0\selenium-api-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.11.0\selenium-chrome-driver-4.11.0.jar;C:\Users\techx\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\techx\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\techx\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\techx\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\techx\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\techx\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\techx\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\techx\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.11.0\selenium-chromium-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-json\4.11.0\selenium-json-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.11.0\selenium-manager-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v113\4.11.0\selenium-devtools-v113-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.11.0\selenium-devtools-v114-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.11.0\selenium-devtools-v115-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.11.0\selenium-devtools-v85-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.11.0\selenium-edge-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.11.0\selenium-firefox-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-http\4.11.0\selenium-http-4.11.0.jar;C:\Users\techx\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.11.0\selenium-ie-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.11.0\selenium-remote-driver-4.11.0.jar;C:\Users\techx\.m2\repository\io\netty\netty-buffer\4.1.92.Final\netty-buffer-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-codec-http\4.1.92.Final\netty-codec-http-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-codec\4.1.92.Final\netty-codec-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-handler\4.1.92.Final\netty-handler-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-common\4.1.92.Final\netty-common-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.92.Final\netty-transport-classes-epoll-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.92.Final\netty-transport-classes-kqueue-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-epoll\4.1.92.Final\netty-transport-native-epoll-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.92.Final\netty-transport-native-kqueue-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.92.Final\netty-transport-native-unix-common-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport\4.1.92.Final\netty-transport-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-resolver\4.1.92.Final\netty-resolver-4.1.92.Final.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-api\1.26.0\opentelemetry-api-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-context\1.26.0\opentelemetry-context-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.26.0\opentelemetry-exporter-logging-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.26.0\opentelemetry-sdk-metrics-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.26.0-alpha\opentelemetry-extension-incubator-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.26.0-alpha\opentelemetry-sdk-logs-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.26.0-alpha\opentelemetry-api-logs-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.26.0-alpha\opentelemetry-api-events-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.26.0\opentelemetry-sdk-common-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.26.0\opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.26.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.26.0\opentelemetry-sdk-trace-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.26.0\opentelemetry-sdk-1.26.0.jar;C:\Users\techx\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.26.0-alpha\opentelemetry-semconv-1.26.0-alpha.jar;C:\Users\techx\.m2\repository\net\bytebuddy\byte-buddy\1.14.4\byte-buddy-1.14.4.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\techx\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\techx\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\techx\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\techx\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\techx\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\techx\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\techx\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.11.0\selenium-safari-driver-4.11.0.jar;C:\Users\techx\.m2\repository\org\seleniumhq\selenium\selenium-support\4.11.0\selenium-support-4.11.0.jar;C:\Users\techx\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\techx\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\techx\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\techx\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\techx\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\techx\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\techx\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\techx\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\techx\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\techx\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.13.0\extentreports-cucumber7-adapter-1.13.0.jar;C:\Users\techx\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\techx\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\techx\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\techx\.m2\repository\tech\grasshopper\extent-pdf-report\2.11.0\extent-pdf-report-2.11.0.jar;C:\Users\techx\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.13.0\cucumber-pdf-report-2.13.0.jar;C:\Users\techx\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\techx\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\techx\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\techx\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\techx\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\techx\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\techx\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\techx\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\techx\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.4.1\rest-assured-cucumber-pdf-report-1.4.1.jar;C:\Users\techx\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\techx\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\techx\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\techx\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\techx\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\techx\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\techx\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\techx\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\techx\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.1\htmlextentreporter-1.0.1.jar;C:\Users\techx\.m2\repository\tech\grasshopper\extent-excel-report\1.3.0\extent-excel-report-1.3.0.jar;C:\Users\techx\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\techx\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\techx\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\techx\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\techx\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\techx\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\techx\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\techx\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\techx\.m2\repository\org\jeasy\easy-random-core\4.0.0\easy-random-core-4.0.0.jar;C:\Users\techx\.m2\repository\org\objenesis\objenesis\3.0.1\objenesis-3.0.1.jar;C:\Users\techx\.m2\repository\io\github\classgraph\classgraph\4.8.29\classgraph-4.8.29.jar;C:\Users\techx\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\techx\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\techx\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\techx"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Automation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\techx\AppData\Local\Temp\surefire13976449608288613259\surefirebooter16500936005870824918.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
+    <property name="user.name" value="techx"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\techx\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\techx\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="C:\Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.4\bin;C:\Users\techx\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.10+11-LTS-240"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Ensure that user is able to archieve an account only if no active invoice is linked with the account" classname="Accounts Scenarios" time="22.639">
+    <error message="element click intercepted: Element &lt;mat-icon _ngcontent-yob-c428=&quot;&quot; role=&quot;img&quot; class=&quot;mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1230, 587). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [a433fb161d2adc917c5cc423157dc506, clickElement {id=f.735953F7D347CFF1DC41AF463D84DEBD.d.AE900537754472C995DB6F7D8D68E686.e.151}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57766}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57766/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (a433fb161d2adc917c5cc423157dc506)] -&gt; xpath: //mat-icon[text()=&apos;more_vert&apos;]]&#10;Session ID: a433fb161d2adc917c5cc423157dc506" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-yob-c428="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1230, 587). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [a433fb161d2adc917c5cc423157dc506, clickElement {id=f.735953F7D347CFF1DC41AF463D84DEBD.d.AE900537754472C995DB6F7D8D68E686.e.151}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57766}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57766/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (a433fb161d2adc917c5cc423157dc506)] -> xpath: //mat-icon[text()='more_vert']]
+Session ID: a433fb161d2adc917c5cc423157dc506
+]]></error>
+    <system-out><![CDATA[Test Case: Ensure that user is able to archieve an account only if no active invoice is linked with the account
+Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user is able to archieve an account only if no active invoice is linked with the account
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Apr 05, 2024 11:08:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:08:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Apr 05, 2024 11:08:46 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that if any account is linked with an incomplete invoice, then the user should get warning message at the time of Archiving the account and account should not be archieved" classname="Accounts Scenarios" time="18.457">
+    <error message="element click intercepted: Element &lt;mat-icon _ngcontent-hgl-c428=&quot;&quot; role=&quot;img&quot; class=&quot;mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1230, 587). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [ca76e2b85c267c69dcab28982c14133b, clickElement {id=f.040A1967E49D0A917A9FA93F6F8E2E09.d.6324B6CAB22F60F59014E83A09877097.e.151}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57833}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57833/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (ca76e2b85c267c69dcab28982c14133b)] -&gt; xpath: //mat-icon[text()=&apos;more_vert&apos;]]&#10;Session ID: ca76e2b85c267c69dcab28982c14133b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-hgl-c428="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1230, 587). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ca76e2b85c267c69dcab28982c14133b, clickElement {id=f.040A1967E49D0A917A9FA93F6F8E2E09.d.6324B6CAB22F60F59014E83A09877097.e.151}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57833}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57833/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (ca76e2b85c267c69dcab28982c14133b)] -> xpath: //mat-icon[text()='more_vert']]
+Session ID: ca76e2b85c267c69dcab28982c14133b
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that if any account is linked with an incomplete invoice, then the user should get warning message at the time of Archiving the account and account should not be archieved
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:08:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:08:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that if any account has open invoicee, then the user should get warning message at the time of Archiving the account and account should not be archieved" classname="Accounts Scenarios" time="17.727">
+    <error message="element click intercepted: Element &lt;mat-icon _ngcontent-uwn-c428=&quot;&quot; role=&quot;img&quot; class=&quot;mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1230, 587). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [f313a41e487980278528dcfc79000ce3, clickElement {id=f.7C5F8DCC1FF68CA9562396F6CC0AF05E.d.24F6403B59A878222FCEDCFA2B7958AD.e.150}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57894}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57894/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (f313a41e487980278528dcfc79000ce3)] -&gt; xpath: //mat-icon[text()=&apos;more_vert&apos;]]&#10;Session ID: f313a41e487980278528dcfc79000ce3" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-uwn-c428="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1230, 587). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f313a41e487980278528dcfc79000ce3, clickElement {id=f.7C5F8DCC1FF68CA9562396F6CC0AF05E.d.24F6403B59A878222FCEDCFA2B7958AD.e.150}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57894}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57894/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f313a41e487980278528dcfc79000ce3)] -> xpath: //mat-icon[text()='more_vert']]
+Session ID: f313a41e487980278528dcfc79000ce3
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+User is displayed with account details
+Test Case: Ensure that if any account has open invoicee, then the user should get warning message at the time of Archiving the account and account should not be archieved
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:09:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:09:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that user should not be able to move the member to another account if invoice is attached with the member" classname="Accounts Scenarios" time="17.589">
+    <error message="element click intercepted: Element &lt;mat-icon _ngcontent-ojv-c428=&quot;&quot; role=&quot;img&quot; class=&quot;mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1230, 587). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [34e90fddb2bc550a5c8c0d0e1b0bd01d, clickElement {id=f.C7AAD5F854FDB1A304C8C6E326F7063F.d.BCF1CAA99F95EB17DE6878624374B25E.e.151}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57952}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57952/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (34e90fddb2bc550a5c8c0d0e1b0bd01d)] -&gt; xpath: //mat-icon[text()=&apos;more_vert&apos;]]&#10;Session ID: 34e90fddb2bc550a5c8c0d0e1b0bd01d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-ojv-c428="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1230, 587). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [34e90fddb2bc550a5c8c0d0e1b0bd01d, clickElement {id=f.C7AAD5F854FDB1A304C8C6E326F7063F.d.BCF1CAA99F95EB17DE6878624374B25E.e.151}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57952}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57952/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (34e90fddb2bc550a5c8c0d0e1b0bd01d)] -> xpath: //mat-icon[text()='more_vert']]
+Session ID: 34e90fddb2bc550a5c8c0d0e1b0bd01d
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user should not be able to move the member to another account if invoice is attached with the member
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:09:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:09:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that user should be able to move the member to another account only if no invoice is attached with the member" classname="Accounts Scenarios" time="17.524">
+    <error message="element click intercepted: Element &lt;mat-icon _ngcontent-aeg-c428=&quot;&quot; role=&quot;img&quot; class=&quot;mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1230, 587). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [682ced086b053d80ef5a09db0f0dbca7, clickElement {id=f.E8CB52F8FF22EE48AADC69EBEC0320E2.d.A2468AE4EDAB2226128811121862E6FB.e.150}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58009}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58009/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (682ced086b053d80ef5a09db0f0dbca7)] -&gt; xpath: //mat-icon[text()=&apos;more_vert&apos;]]&#10;Session ID: 682ced086b053d80ef5a09db0f0dbca7" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-aeg-c428="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1230, 587). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [682ced086b053d80ef5a09db0f0dbca7, clickElement {id=f.E8CB52F8FF22EE48AADC69EBEC0320E2.d.A2468AE4EDAB2226128811121862E6FB.e.150}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58009}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58009/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (682ced086b053d80ef5a09db0f0dbca7)] -> xpath: //mat-icon[text()='more_vert']]
+Session ID: 682ced086b053d80ef5a09db0f0dbca7
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user should be able to move the member to another account only if no invoice is attached with the member
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:09:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:09:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that clicking on the &quot;Print account details&quot;, the system should generate the account details PDF for the selected patient" classname="Accounts Scenarios" time="19.193"/>
+  <testcase name="Ensure that user is able to create write off for small balances and the same is getting displayed on the Write Off Report" classname="Accounts Scenarios" time="19.614">
+    <error message="element click intercepted: Element &lt;span _ngcontent-wrl-c253=&quot;&quot; class=&quot;flex items-center justify-between w-full&quot;&gt;...&lt;/span&gt; is not clickable at point (128, 314). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [280eec762161a1184d2882008646638d, clickElement {id=f.DC7F876A8F74429ADFD2B282FB9337FE.d.76CEC38F3D708C145D579727D5556133.e.149}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58129}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58129/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (280eec762161a1184d2882008646638d)] -&gt; xpath: //*[text()=&apos; Write-off &apos;]]&#10;Session ID: 280eec762161a1184d2882008646638d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span _ngcontent-wrl-c253="" class="flex items-center justify-between w-full">...</span> is not clickable at point (128, 314). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [280eec762161a1184d2882008646638d, clickElement {id=f.DC7F876A8F74429ADFD2B282FB9337FE.d.76CEC38F3D708C145D579727D5556133.e.149}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58129}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58129/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (280eec762161a1184d2882008646638d)] -> xpath: //*[text()=' Write-off ']]
+Session ID: 280eec762161a1184d2882008646638d
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user is able to create write off for small balances and the same is getting displayed on the Write Off Report
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:10:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:10:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that user is able to create write off for bad debt and the same is getting displayed on the Write Off Report" classname="Accounts Scenarios" time="19.434">
+    <error message="element click intercepted: Element &lt;span _ngcontent-wlt-c253=&quot;&quot; class=&quot;flex items-center justify-between w-full&quot;&gt;...&lt;/span&gt; is not clickable at point (128, 314). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [aabd08ce61f3a8c08a9a3d61b13aeb96, clickElement {id=f.E102010D9EF2962018A851C39D28BCCD.d.CBBDA00C2BC6848500313D496A64A0A1.e.150}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58185}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58185/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (aabd08ce61f3a8c08a9a3d61b13aeb96)] -&gt; xpath: //*[text()=&apos; Write-off &apos;]]&#10;Session ID: aabd08ce61f3a8c08a9a3d61b13aeb96" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span _ngcontent-wlt-c253="" class="flex items-center justify-between w-full">...</span> is not clickable at point (128, 314). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [aabd08ce61f3a8c08a9a3d61b13aeb96, clickElement {id=f.E102010D9EF2962018A851C39D28BCCD.d.CBBDA00C2BC6848500313D496A64A0A1.e.150}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58185}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58185/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (aabd08ce61f3a8c08a9a3d61b13aeb96)] -> xpath: //*[text()=' Write-off ']]
+Session ID: aabd08ce61f3a8c08a9a3d61b13aeb96
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user is able to create write off for bad debt and the same is getting displayed on the Write Off Report
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:10:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:10:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate that account is searchable" classname="Accounts Scenarios" time="12.698"/>
+  <testcase name="Validate that new account is created[myself]." classname="Accounts Scenarios" time="22.742"/>
+  <testcase name="Ensure that the user is able to capture medical Aid Invoice" classname="Accounts Scenarios" time="29.373"/>
+  <testcase name="Ensure that the user is able to capture cash Invoice for private account" classname="Accounts Scenarios" time="29.129"/>
+  <testcase name="Ensure that the user is able to capture cash Invoice for Medical Aid account" classname="Accounts Scenarios" time="29.492"/>
+  <testcase name="Ensure that the user is able to capture Medical Insurance Invoice for private account" classname="Accounts Scenarios" time="30.157"/>
+  <testcase name="Ensure that the user is able to capture Medical Insurance Invoice for Medical Aid account" classname="Accounts Scenarios" time="31.816"/>
+  <testcase name="Ensure that the user is able to capture No charge Invoice for private account" classname="Accounts Scenarios" time="30.509">
+    <error message="element click intercepted: Element &lt;span _ngcontent-nkt-c434=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (1224, 598). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [e477423c921b96f459736f0cdae6069a, clickElement {id=f.6F6812CB151DFF47834304107E8D0A8F.d.E3FD059F95761759FEA5C7CE07198F4E.e.249}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58648}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58648/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (e477423c921b96f459736f0cdae6069a)] -&gt; xpath: //span[text()=&apos;Submit&apos;]]&#10;Session ID: e477423c921b96f459736f0cdae6069a" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span _ngcontent-nkt-c434="">...</span> is not clickable at point (1224, 598). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e477423c921b96f459736f0cdae6069a, clickElement {id=f.6F6812CB151DFF47834304107E8D0A8F.d.E3FD059F95761759FEA5C7CE07198F4E.e.249}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58648}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58648/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e477423c921b96f459736f0cdae6069a)] -> xpath: //span[text()='Submit']]
+Session ID: e477423c921b96f459736f0cdae6069a
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+User is displayed with capture invoice page
+Test Case: Ensure that the user is able to capture No charge Invoice for private account
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:14:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:14:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that the user is able to capture No charge Invoice for Medical Aid account" classname="Accounts Scenarios" time="30.699"/>
+  <testcase name="Ensure that user is able to email Outstanding balance statement for a particular account" classname="Accounts Scenarios" time="14.486">
+    <error message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [1ae22117a60f6ee4befc9cffbeabfcbf, clickElement {id=f.F00480B35060A74E26BE3D7CBDD9CA71.d.9DE3B9EF35C217F2631223B63F76E102.e.116}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58770}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58770/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (1ae22117a60f6ee4befc9cffbeabfcbf)] -&gt; xpath: //span[text()=&apos; Email statement &apos;]]&#10;Session ID: 1ae22117a60f6ee4befc9cffbeabfcbf" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1ae22117a60f6ee4befc9cffbeabfcbf, clickElement {id=f.F00480B35060A74E26BE3D7CBDD9CA71.d.9DE3B9EF35C217F2631223B63F76E102.e.116}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58770}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58770/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1ae22117a60f6ee4befc9cffbeabfcbf)] -> xpath: //span[text()=' Email statement ']]
+Session ID: 1ae22117a60f6ee4befc9cffbeabfcbf
+</error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user is able to email Outstanding balance statement for a particular account
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:15:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:15:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that user is able to email Full statement for a particular account" classname="Accounts Scenarios" time="21.571"/>
+  <testcase name="Ensure that user is able to email Full statement for cancelled invoices for a particular account" classname="Accounts Scenarios" time="14.876">
+    <error message="stale element reference: stale element not found in the current frame&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [6efeea946a7e0f2d6da4fe79d1eafb17, clickElement {id=f.99E9B85EC2F8A25998F35E25D556096D.d.3D06ADD8460A8CED0CC772A639CDE2D9.e.117}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58887}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58887/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (6efeea946a7e0f2d6da4fe79d1eafb17)] -&gt; xpath: //span[text()=&apos; Email statement &apos;]]&#10;Session ID: 6efeea946a7e0f2d6da4fe79d1eafb17" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6efeea946a7e0f2d6da4fe79d1eafb17, clickElement {id=f.99E9B85EC2F8A25998F35E25D556096D.d.3D06ADD8460A8CED0CC772A639CDE2D9.e.117}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58887}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58887/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6efeea946a7e0f2d6da4fe79d1eafb17)] -> xpath: //span[text()=' Email statement ']]
+Session ID: 6efeea946a7e0f2d6da4fe79d1eafb17
+</error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user is able to email Full statement for cancelled invoices for a particular account
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:15:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:15:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Ensure that user should be able to move the member to another account only if no invoice is attached with the member [2]" classname="Accounts Scenarios" time="17.245">
+    <error message="element click intercepted: Element &lt;mat-icon _ngcontent-cey-c428=&quot;&quot; role=&quot;img&quot; class=&quot;mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1230, 587). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=123.0.2420.65)&#10;Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [b640ea7cadbe15bde00f3152e4d53a3f, clickElement {id=f.A7AEF44FBE9D2C21AF41022FD053F38D.d.71D5F0905953EB102BC246E3B538283C.e.149}]&#10;Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58941}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58941/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: MicrosoftEdge on windows (b640ea7cadbe15bde00f3152e4d53a3f)] -&gt; xpath: //mat-icon[text()=&apos;more_vert&apos;]]&#10;Session ID: b640ea7cadbe15bde00f3152e4d53a3f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-cey-c428="" role="img" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1230, 587). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b640ea7cadbe15bde00f3152e4d53a3f, clickElement {id=f.A7AEF44FBE9D2C21AF41022FD053F38D.d.71D5F0905953EB102BC246E3B538283C.e.149}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58941}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58941/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b640ea7cadbe15bde00f3152e4d53a3f)] -> xpath: //mat-icon[text()='more_vert']]
+Session ID: b640ea7cadbe15bde00f3152e4d53a3f
+]]></error>
+    <system-out><![CDATA[Root element: webObjects
+
+Node Name :browser
+Identifier: browser-driver
+Element Path: edge
+Root element: webObjects
+
+Node Name :QAurl
+Identifier: QA
+Element Path: https://hb-capacitor-qa.web.app/login
+Root element: webObjects
+
+Node Name :user
+Identifier: username
+Element Path: auto001
+Root element: webObjects
+
+Node Name :pass
+Identifier: password
+Element Path: !Password01
+User is displayed with multiple accounts
+Test Case: Ensure that user should be able to move the member to another account only if no invoice is attached with the member [2]
+]]></system-out>
+    <system-err><![CDATA[Apr 05, 2024 11:15:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 123
+Apr 05, 2024 11:15:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 123.0.2420.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

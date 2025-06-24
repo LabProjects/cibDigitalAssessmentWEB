@@ -1,0 +1,100 @@
+-------------------------------------------------------------------------------
+Test set: runners.CalendarTestRunner
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 530.591 s <<< FAILURE! - in runners.CalendarTestRunner
+Ensure that appointment is getting created successfully for an existing patient(Calender Scenarios)  Time elapsed: 14.763 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <td data-time="16:00:00" class="fc-timegrid-slot fc-timegrid-slot-lane "></td> is not clickable at point (716, 546). Other element would receive the click: <div _ngcontent-rcr-c505="" id="patient-name-label" class="text-hb-text-default text-xs font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full">...</div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f6c5ba18907a4bbdf3485387c79b68a7, clickElement {id=f.A2013BD3564265A25D6888285E0CBD38.d.8359AC3D795DB63D1035748511D93273.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61545}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61545/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f6c5ba18907a4bbdf3485387c79b68a7)] -> xpath: (//*[@id='calendar']//td[@data-time='16:00:00'])[2]]
+Session ID: f6c5ba18907a4bbdf3485387c79b68a7
+
+Ensure that the Visit Reason drop down displaying the values which are available under Admin->Settings->Reasons for visit page(Calender Scenarios)  Time elapsed: 41.246 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()=' Settings ']"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ab57b7cb162a0878bfed53ea91a71931, findElement {using=xpath, value=//*[text()=' Settings ']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61772}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61772/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab57b7cb162a0878bfed53ea91a71931
+
+Ensure that User can edit the appointment and can change the date,time and appointment type other appointment related details of the appointment(Calender Scenarios)  Time elapsed: 45.424 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-today']"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [a9c7c49109e91a721dc416061ffa0b83, findElement {using=xpath, value=//div[@class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-today']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61831}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61831/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9c7c49109e91a721dc416061ffa0b83
+
+Ensure that if a user creating any appointment for an existing patient which is available at HBC side then the appointment should be displayed on HBC calendar as well(Calender Scenarios)  Time elapsed: 14.04 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <td data-time="16:00:00" class="fc-timegrid-slot fc-timegrid-slot-lane "></td> is not clickable at point (716, 546). Other element would receive the click: <div _ngcontent-xkk-c505="" id="patient-name-label" class="text-hb-text-default text-xs font-semibold overflow-hidden text-ellipsis whitespace-nowrap w-full">...</div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [271ee0b46c09a3a395e212dc1c525db5, clickElement {id=f.25FAC46759B00047B7837EDA6D7F811D.d.138932DA121E6D06B8F1642481A971E7.e.138}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61890}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61890/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (271ee0b46c09a3a395e212dc1c525db5)] -> xpath: (//*[@id='calendar']//td[@data-time='16:00:00'])[2]]
+Session ID: 271ee0b46c09a3a395e212dc1c525db5
+
+Capture claim from check-out[no appointment linked](Calender Scenarios)  Time elapsed: 42.531 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@id='patient-name-label'])[1]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [0ae16d8ea011eb411ef6edd5b383c851, findElement {using=xpath, value=(//*[@id='patient-name-label'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61948}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61948/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ae16d8ea011eb411ef6edd5b383c851
+
+Capture claim from check-out to validate nappi code,add line and tarrif code(Calender Scenarios)  Time elapsed: 49.513 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@id='diagnosisSearchInput'])"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [5fefd677251047fd97480eed2eb598d4, findElement {using=xpath, value=(//input[@id='diagnosisSearchInput'])}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62132}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62132/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fefd677251047fd97480eed2eb598d4
+
+Ensure that appointment tile displaying the invoice which has been linked with the appointment(Calender Scenarios)  Time elapsed: 35.935 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span _ngcontent-hyf-c262="" class="ml-2.5 font-medium text-sm mt-1 text-hb-text-default">...</span> is not clickable at point (325, 28). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f536fa29a6acab0029328ca1b4455c2f, clickElement {id=f.4E29FFB1D96F08E8E1F4D4DA19E48AC5.d.A29D515E2C279E30E1EB5D4FD55A2BCB.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62264}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62264/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (f536fa29a6acab0029328ca1b4455c2f)] -> xpath: //a/span[text()='Accounts']]
+Session ID: f536fa29a6acab0029328ca1b4455c2f
+
+Capture claim from check-out[appointment linked](Calender Scenarios)  Time elapsed: 44.303 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@id='patient-name-label'])[1]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [471abe1a51a6fd6427f88136e7e4ca99, findElement {using=xpath, value=(//*[@id='patient-name-label'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62327}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62327/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 471abe1a51a6fd6427f88136e7e4ca99
+

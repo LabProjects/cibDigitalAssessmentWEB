@@ -1,0 +1,160 @@
+-------------------------------------------------------------------------------
+Test set: runners.AdminTestRunner
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 0, Errors: 13, Skipped: 0, Time elapsed: 1,522.159 s <<< FAILURE! - in runners.AdminTestRunner
+Ensure that admin user can create a user with multiple report access(Admin Scenarios)  Time elapsed: 42.97 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//mat-option[@role='option'])[2]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [cf4794979ab7f9e40d595949cb9844a9, findElement {using=xpath, value=(//mat-option[@role='option'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59052}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59052/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf4794979ab7f9e40d595949cb9844a9
+
+Ensure that if "Don’t show the medical aid liable total in the Summary section of the statement" checkbox is ON then,the medical aid liable amount should not be displayed on Statements summary section(Admin Scenarios)  Time elapsed: 11.874 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User clicks on the Don’t show the medical aid liable total in the Summary section of the statement button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User clicks on the Don’t show the medical aid liable total in the Summary section of the statement button")
+public void user_clicks_on_the_don_t_show_the_medical_aid_liable_total_in_the_summary_section_of_the_statement_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Ensure that user can add private rates for "Medical aid invoices - All" under Procedure tab(Admin Scenarios)  Time elapsed: 45.204 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[7]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [01de94e9aff336ea536deb3f230a3a54, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60067}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60067/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01de94e9aff336ea536deb3f230a3a54
+
+Ensure that user can add private rates for "Medical aid invoices - All" under Medicines tab(Admin Scenarios)  Time elapsed: 74.644 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[7]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ab1a95d43dc19ae2ef429bba9564f367, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60123}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60123/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab1a95d43dc19ae2ef429bba9564f367
+
+Ensure that user can add private rates for "Medical aid invoices - All" under Consumables tab(Admin Scenarios)  Time elapsed: 73.713 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[7]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [74852a1828ac060725e59647743a2afe, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60192}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60192/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74852a1828ac060725e59647743a2afe
+
+Ensure that user can add private rates for "Medical aid invoices - SPO" under Procedure tab(Admin Scenarios)  Time elapsed: 44.535 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[7]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9e53cbc0830e73053fc1bf213eea2b9c, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60261}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60261/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e53cbc0830e73053fc1bf213eea2b9c
+
+Ensure that user can add private rates for "Medical aid invoices - SPO" under Medicines tab(Admin Scenarios)  Time elapsed: 74.273 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[7]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c8383de54c6af27ee16a3e71257fb317, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60317}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60317/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8383de54c6af27ee16a3e71257fb317
+
+Ensure that user can add private rates for "Medical aid invoices - SPO" under Consumables tab(Admin Scenarios)  Time elapsed: 73.681 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[7]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8ec453033c2e4c437ac88bf20646440e, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[7]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60385}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60385/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec453033c2e4c437ac88bf20646440e
+
+Ensure that at the time of Practice Admin user creation all the branches are coming as unselected and user can select multiple branches under Assigned branches tab(Admin Scenarios)  Time elapsed: 46.675 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ed8aeb9321be41df9d6d7e3fc7e8886a, clickElement {id=f.338FBD1C745880BAF3137629DDBFA4E4.d.235E570220FA9FEC1A77034187AEA3C7.e.153}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60897}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60897/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (ed8aeb9321be41df9d6d7e3fc7e8886a)] -> xpath: (//mat-list-option[@class='mat-list-item mat-list-option mat-focus-indicator mat-accent ng-star-inserted'])[1]]
+Session ID: ed8aeb9321be41df9d6d7e3fc7e8886a
+
+Ensure that at the time of Practice Admin user creation all the branches are coming as unselected and user can select ALL the branches by selecting the checkbox "All"(Admin Scenarios)  Time elapsed: 46.585 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [543fbe8d6e171bd2740c91a8cf395439, clickElement {id=f.AC546BEEBD04BCAB457A8527487932C5.d.763371984A4C8C3D863D8233993077DF.e.157}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60955}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60955/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (543fbe8d6e171bd2740c91a8cf395439)] -> xpath: (//mat-list-option[@class='mat-list-item mat-list-option mat-focus-indicator mat-accent ng-star-inserted'])[1]]
+Session ID: 543fbe8d6e171bd2740c91a8cf395439
+
+Ensure that for a multibranch practice, a new tab should be available for each provider named as "Assigned branches" and user should be able to select the branches for the provider(Admin Scenarios)  Time elapsed: 46.483 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='mat-ripple mat-tab-label mat-focus-indicator ng-star-inserted'])[4]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1526d4e466d0e7b1a0d5745616c95599, findElement {using=xpath, value=(//div[@class='mat-ripple mat-tab-label mat-focus-indicator ng-star-inserted'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61184}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61184/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1526d4e466d0e7b1a0d5745616c95599
+
+Ensure that the admin user is able to set the default place of service for the provider(Admin Scenarios)  Time elapsed: 19.299 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span _ngcontent-ggg-c262="" class="ml-2.5 font-medium text-sm mt-1 text-hb-text-default">...</span> is not clickable at point (325, 28). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b28f367b14cdedf44e4e66d2fc1c8841, clickElement {id=f.30389F06C1B378DD53EF23A466AD24B6.d.6D875B38C55FA645978D28FE4C1193B1.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61424}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61424/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b28f367b14cdedf44e4e66d2fc1c8841)] -> xpath: //a/span[text()='Accounts']]
+Session ID: b28f367b14cdedf44e4e66d2fc1c8841
+
+Ensure that if the checkbox "Send payment confirmation SMS to patient" is ON then the patient should receive payment confirmation through SMS(Admin Scenarios)  Time elapsed: 42.294 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='mat-checkbox-inner-container'])[2]"}
+  (Session info: MicrosoftEdge=123.0.2420.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [23211a0ea1ecad2c649a1d534efcc93b, findElement {using=xpath, value=(//span[@class='mat-checkbox-inner-container'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:61483}, msedge: {msedgedriverVersion: 123.0.2420.81 (8acdca46cf48..., userDataDir: C:\Users\techx\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61483/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23211a0ea1ecad2c649a1d534efcc93b
+
